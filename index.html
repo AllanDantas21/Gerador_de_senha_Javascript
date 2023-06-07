@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Gerador de senha</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span class="material-symbols-rounded">copy_all</span>
+            </div>
+            <div class="pass-indicator">
+                <div class="details">
+                    <label class="title">Comprimento da Senha</label>
+                    <input type="range" min="1" max="30" value="15" step="1">
+                    <span></span>
+                </div>
+            </div>
+               
+            <div class="pass-settings">
+                <label class="tittle">Pass Settings</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Minuscula (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase" checked>
+                        <label for="uppercase">Maiuscula (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="numeros" checked>
+                        <label for="numeros">Numeros (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="symbols" checked>
+                        <label for="symbols ">Simbolos (!-$%)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="exc-duplicate" checked>
+                        <label for="exc-duplicate">Excluir Duplicadas</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="spaces" checked>
+                        <label for="spaces">Incluir espaços</label>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <button class="generate-btn">Gerar Senha</button>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
