@@ -19,6 +19,7 @@ const generatePassword = () => {
     passLength = lengthSlider.value;
 
     options.forEach(option => {
+    
         if(option.checked){
             if(option.id !== "exc-duplicate" && option.id !== "spaces"){
                 staticPassword += characters[option.id];
@@ -26,6 +27,7 @@ const generatePassword = () => {
                 staticPassword += `  ${staticPassword}   `;
             }else {
                 excludeDuplicate = true;
+                staticPassword += characters[option.id];
             }
         }
     });

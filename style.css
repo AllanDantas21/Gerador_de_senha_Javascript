@@ -151,7 +151,9 @@ body{
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
 }
-
+.options .option1{
+    display: none;
+}
 
 
 
